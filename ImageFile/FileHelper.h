@@ -20,9 +20,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(FileHelper*)shared;
 
--(BOOL)saveImageFile:(UIImage*)image name:(NSString*)name;
+/// 이미지 파일 저장
+-(BOOL)saveImage:(UIImage*)image name:(NSString*)name;
+
+/// 저장된 이미지 파일 가져오기
 -(UIImage*)getSavedImage:(NSString*)name;
+
+/// 저장된 모든 이미지 파일 가져오기
 -(NSArray<FileImage*> *)getSavedImages:(BOOL)isHideExtension;
+
+/// 이미지 파일 삭제
+-(BOOL)removeImage:(NSString*)name;
 
 @end
 

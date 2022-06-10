@@ -22,7 +22,7 @@ static FileHelper *_helper;
     return _helper;
 }
 
-- (instancetype)init {
+-(instancetype)init {
     self = [super init];
     if (self) {
     }
@@ -32,7 +32,7 @@ static FileHelper *_helper;
 /// 이미지 파일 저장
 /// @param image 이미지
 /// @param name  파일명
--(BOOL)saveImageFile:(UIImage*)image name:(NSString*)name {
+-(BOOL)saveImage:(UIImage*)image name:(NSString*)name {
     NSData *imageData = UIImagePNGRepresentation(image);
     if (imageData == nil) {
         NSLog(@"imageData == nil");
@@ -113,6 +113,28 @@ static FileHelper *_helper;
     }
 
     return fileImages;
+}
+
+/// 이미지 파일 삭제
+-(BOOL)removeImage:(NSString*)name {
+    NSError *error;
+    NSURL *directory = [NSFileManager.defaultManager URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:false error:&error];
+    if (error) {
+        NSLog(@"error : %@", error);
+        return false;
+    }
+    
+    name = [self addExtension:name];
+    
+    NSString *path = [[NSURL fileURLWithPath:directory.absoluteString] URLByAppendingPathComponent:name].path;
+    if ([NSFileManager.defaultManager fileExistsAtPath:path]) {
+        [NSFileManager.defaultManager removeItemAtPath:path error:&error];
+        if (error) {
+            NSLog(@"error : %@", error);
+            return false;
+        }
+    }
+    return true;
 }
 
 #pragma mark - Extension (확장자)
