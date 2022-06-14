@@ -13,3 +13,6 @@
 
 **3. ImageFile**
 - Document 영역에 UIImage를 jpg 이미지 파일로 저장하기/가져오기/삭제하기
+
+**4. Canvas**
+- 그림 그릴 수 있는 Canvas UIView (라인 그리기, 라인 삭제, 전체 삭제)
