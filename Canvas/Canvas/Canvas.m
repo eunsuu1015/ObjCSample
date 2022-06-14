@@ -3,7 +3,7 @@
 //  Canvas
 //
 //  Created by EunSu on 2022/06/14.
-//  https://www.youtube.com/watch?v=E2NTCmEsdSE&t=1s
+//  참고 https://www.youtube.com/watch?v=E2NTCmEsdSE&t=1s
 
 #import "Canvas.h"
 
@@ -58,7 +58,6 @@
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
     
-    // draw line
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetStrokeColorWithColor(context, _strokeColor.CGColor);
     CGContextSetLineWidth(context, _strokeWidth);

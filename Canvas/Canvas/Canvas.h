@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) UIColor *strokeColor;     // 펜 색상
 
 - (id)initWithFrame:(CGRect)frame strokeWidth:(float)width strokeColor:(UIColor*)color;
-
 /// 마지막 라인 삭제
 - (void)undo;
 /// 전체 라인 삭제
