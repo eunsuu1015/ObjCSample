@@ -16,3 +16,6 @@
 
 **4. Canvas**
 - 그림 그릴 수 있는 Canvas UIView (라인 그리기, 라인 삭제, 전체 삭제)
+
+**5. SQLCipher**
+- SQLite Cipher 사용 
