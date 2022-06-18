@@ -80,6 +80,18 @@
     CGContextStrokePath(context);
 }
 
+-(void)test {
+    
+    NSMutableArray *array = [NSMutableArray new];
+    
+    // NSMutableArray 에 CGPiont 넣기
+    CGPoint point = CGPointMake(100, 100);
+    [array addObject:[NSValue valueWithCGPoint:point]];
+    
+    NSValue *value = array[0];
+    CGPoint getPoint = [value CGPointValue];
+}
+
 #pragma mark - Touches
 
 /// 그리기 시작
