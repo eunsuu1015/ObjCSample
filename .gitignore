@@ -10,21 +10,7 @@
 #           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGNORE THE LOCK FILE
 Pods/
 
-### SwiftPM ###
-Packages
-.build/
-xcuserdata
-DerivedData/
-*.xcodeproj
 
-
-### Xcode ###
-## User settings
-xcuserdata/
-
-## Xcode 8 and earlier
-*.xcscmblueprint
-*.xccheckout
 
 # End of https://www.toptal.com/developers/gitignore/api/swiftpm,cocoapods,xcode
 
