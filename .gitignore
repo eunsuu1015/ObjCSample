@@ -14,7 +14,7 @@ Pods/
 # Xcode
 *.xcodeproj/project.pbxproj
 *.xcodeproj/xcshareddata/
-*.xcodeproj/xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
 *.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
