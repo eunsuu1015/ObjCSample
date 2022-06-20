@@ -19,4 +19,4 @@
 
 **5. SQLCipher**
 - SQLite Cipher 사용
-- pod install 
+- pod install 필요
