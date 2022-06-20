@@ -11,6 +11,12 @@
 Pods/
 
 
+# Xcode
+*.xcodeproj/project.pbxproj
+*.xcodeproj/xcshareddata/
+*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+**/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/swiftpm,cocoapods,xcode
 
