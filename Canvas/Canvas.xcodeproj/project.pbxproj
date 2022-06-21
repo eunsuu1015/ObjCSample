@@ -15,6 +15,7 @@
 		2D467A7C2858655200A0EE74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D467A7A2858655200A0EE74 /* LaunchScreen.storyboard */; };
 		2D467A7F2858655200A0EE74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D467A7E2858655200A0EE74 /* main.m */; };
 		2D467A872858656C00A0EE74 /* Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D467A862858656C00A0EE74 /* Canvas.m */; };
+		FA45DCF2285E2A31003CC148 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45DCF1285E2A31003CC148 /* Line.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		2D467A7E2858655200A0EE74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D467A852858656C00A0EE74 /* Canvas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Canvas.h; sourceTree = "<group>"; };
 		2D467A862858656C00A0EE74 /* Canvas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Canvas.m; sourceTree = "<group>"; };
+		FA45DCF0285E2A31003CC148 /* Line.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		FA45DCF1285E2A31003CC148 /* Line.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				2D467A7E2858655200A0EE74 /* main.m */,
 				2D467A852858656C00A0EE74 /* Canvas.h */,
 				2D467A862858656C00A0EE74 /* Canvas.m */,
+				FA45DCF0285E2A31003CC148 /* Line.h */,
+				FA45DCF1285E2A31003CC148 /* Line.m */,
 			);
 			path = Canvas;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D467A742858655000A0EE74 /* ViewController.m in Sources */,
+				FA45DCF2285E2A31003CC148 /* Line.m in Sources */,
 				2D467A6E2858655000A0EE74 /* AppDelegate.m in Sources */,
 				2D467A7F2858655200A0EE74 /* main.m in Sources */,
 				2D467A872858656C00A0EE74 /* Canvas.m in Sources */,
@@ -312,7 +318,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.authlabs.Canvas;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.es1015.Canvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -340,7 +346,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.authlabs.Canvas;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.es1015.Canvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

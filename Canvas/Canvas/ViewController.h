@@ -9,7 +9,6 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIView *viewDraw;
 
 @end
 
